@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>SUDOKU</h1>
+    <hr>
+    <div id="niveles">
+        <button class="btn btn-facil btn-dificultad-actual">Facil 1/10</button>
+        <button class="btn btn-medio">Medio 1/10</button>
+        <button class="btn btn-dificil">Dificil 1/10</button>
+    </div>
+    <div id="status">
+        <button id="btnComenzar" class="btn-comenzar reiniciar">COMENZAR JUEGO</button>
+        <p id="tiempo">00:00</p>
+        <button id="btnPausa" class="btn-pausar" hidden="true"></button>
+        <h2 id="errores">0</h2>
+    </div>
+    <div id="contenedor-tablero">
+        <div id="tablero"></div>
+    </div>
+    <div id="numeros"></div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
